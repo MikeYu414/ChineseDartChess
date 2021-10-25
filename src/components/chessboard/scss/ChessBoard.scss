@@ -1,0 +1,22 @@
+.main-panel {
+  width: 960px;
+  position: absolute;
+  left: 110px;
+}
+
+.chess-container {
+  float: left;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.chess-background {
+  position: absolute;
+  height: 610px;
+  width: 980px;
+  left: 100px;
+  z-index: -1;
+  top: -120px;
+}

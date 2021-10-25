@@ -1,0 +1,213 @@
+html, body {
+  user-select: none;
+  height: inherit !important;
+}
+
+.tip {
+  position: fixed;
+  top: 5px;
+  left: -140px;
+
+  .letter {
+    font-size: 32px !important;
+  }
+}
+
+.welcome-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.btn-joinin {
+  right: 70px;
+  width: 50%;
+  border-radius: 20px !important;
+}
+
+.btn-restart {
+  right: 110px;
+  width: 50%;
+  border-radius: 20px !important;
+}
+
+.score-board {
+  position: absolute;
+  left: 1110px;
+  width: calc(100% - 1150px);
+  top: -120px;
+}
+
+.button-ml {
+  margin-left: 30px;
+}
+
+.ContactBox {
+  width: 100%;
+  &-header {
+    font-size: 15px;
+    margin: 0 14px;
+    height: 20px;
+    padding-bottom: 9px;
+    padding-top: 21px;
+    border-bottom: 1px solid #ebebeb;
+    font-weight: 600;
+    text-align: center;
+  }
+  //聊天框
+  .MessageBox {
+    height: 330px;
+    overflow: scroll;
+
+    .user-name{
+      margin: 15px 20px -10px;
+      display: flex;
+    }
+
+    .Message {
+      display: flex;
+      margin: 10px;
+      .UserMsg {
+        max-width: 388px;
+        border-radius: 8px;
+        padding: 6px 12px;
+        font-size: 14px;
+        position: relative;
+        margin: 0 8px;
+        text-align: left;
+        white-space: pre-wrap;
+        word-break: break-all;
+      }
+      .LeftMessage {
+        background-color: #f6f6f6;
+        color: #444;
+        &::after {
+          content: "";
+          position: absolute;
+          width: 8px;
+          height: 8px;
+          left: -4px;
+          top: 14px;
+          background: #f6f6f6;
+          -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+        }
+      }
+      .RightMessage {
+        background-color: #0084ff;
+        color: #fff;
+        &::after {
+          content: "";
+          position: absolute;
+          width: 8px;
+          height: 8px;
+          right: -4px;
+          top: 14px;
+          background: #0084ff;
+          -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+        }
+      }
+    }
+  }
+  //输入框
+  .InputBox {
+    padding: 0 10px;
+    border-top: 1px solid #ebebeb;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100px;
+    background: #fff;
+    z-index: 10;
+    .InputTextarea {
+      margin-top: 20px;
+      width: 100%;
+      border: none;
+      font-size: 14px;
+      flex: 1;
+    }
+    &-footer {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      height: 50px;
+      .FooterDesc {
+        font-size: 14px;
+        color: #bfbfbf;
+        padding-right: 10px;
+      }
+    }
+  }
+}
+
+.game-result{
+  .ant-modal-content{
+    background: linear-gradient(rgb(236, 228, 217) 0%, rgb(233, 223, 209) 100%);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translate3d(0, 0, 0);
+    text-shadow: #ac8c4cee 0 0 0.05em;
+  };
+
+  100% {
+    transform: translate3d(0, -16px, 0);
+    text-shadow: #ac8c4cee 0 0.1em 0.35em;
+  }
+}
+
+.bounce {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font: normal bold 6rem "Product Sans", sans-serif;
+  color: #ffa900;
+  letter-spacing: 8px;
+  white-space: nowrap;
+
+  .letter {
+    animation: bounce 0.4s cubic-bezier(0.05, 0, 0.2, 1) infinite alternate;
+    display: inline-block;
+    transform: translate3d(0, 0, 0);
+    margin-top: 0.5em;
+    text-shadow: rgb(255 255 255 / 40%) 0 0 0.05em;
+    font: normal 500 6rem 'Varela Round', sans-serif;
+
+    &:nth-child(1){
+      animation-delay: 0s;
+    }
+    &:nth-child(2){
+      animation-delay: 0.1s;
+    }
+    &:nth-child(3){
+      animation-delay: 0.2s;
+    }
+    &:nth-child(4){
+      animation-delay: 0.3s;
+    }
+    &:nth-child(5){
+      animation-delay: 0.4s;
+    }
+    &:nth-child(6){
+      animation-delay: 0.5s;
+    }
+    &:nth-child(6){
+      animation-delay: 0.6s;
+    }
+  }
+}
+
+.color-tip {
+  font-weight: bold;
+  color: #ac680d;
+}
+
+.tip-label {
+  width: 80px;
+  text-align: right;
+}

@@ -1,0 +1,39 @@
+.chess {
+  width:100px;
+	height:100px;
+	border-radius:50px;
+	border:rgb(78,56,23) double 8px;
+	background-color:rgb(192,149,106);
+	margin:auto;text-align:center;
+	font-size: 77px;
+	font-family: "楷体";
+	line-height:84px;text-shadow:0px 0px 2px white;
+	box-shadow:3px 3px 2px black;
+	margin:10px;
+
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+.chess-turn {
+	transform: rotateX(360deg);
+}
+
+.chess-red {
+  color:rgb(144,11,11);
+  border-color:rgb(144,11,11);
+}
+
+.chess-black {
+  color:rgb(78,56,23);
+}
+
+.chess-selected {
+	transform: scale(1.1);
+	transition: all 0.3s ease;
+}
+
+.chess-border {
+	transition: all 0.8s ease;
+}
